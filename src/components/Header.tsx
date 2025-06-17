@@ -89,7 +89,17 @@ const Header = ({ onToggleSidebar, isSidebarOpen }: HeaderProps) => {
               },
             }}
           >
-            <Badge badgeContent={3} color='error'>
+            <Badge  variant="dot"
+                sx={{
+                  '& .MuiBadge-badge': {
+                    backgroundColor: '#D175B6',
+                    color: '#D175B6',
+                    width: '10px',
+                    height: '10px',
+                    minWidth: '10px',
+                    borderRadius: '50%',
+                  },
+                }}>
               <NotificationsIconOutlined
                 sx={{
                   fontSize: {
